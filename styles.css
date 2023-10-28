@@ -71,7 +71,7 @@ button {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("./hero-image.png");
+  background-image: url("./static/hero-image.png");
   background-size: cover;
 }
 
@@ -133,8 +133,10 @@ button {
 }
 
 .about {
-  padding: 80px 100px;
+  padding: 80px 100px 120px;
   color: #1c1b1f;
+  position: relative;
+  z-index: 2;
   background: linear-gradient(180deg, #f2f5f9 36.01%, #fff 100%);
 }
 
@@ -227,6 +229,7 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
+  justify-content: space-between;
 }
 
 .about__content {
@@ -280,6 +283,20 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  aspect-ratio: 16/9;
-  background: url("./bg1.png");
+  aspect-ratio: 2/1;
+  background: url("./static/background-chertezh.jpg");
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+  opacity: 0.05;
+  transform: scaleX(-1);
+}
+
+.about__images {
+  background: url("./static/groupimg-about.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services {
 }
