@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: Manrope;
+  src: url("./font/Manrope/Manrope-VariableFont_wght.ttf");
+}
 
 :root {
   --brand-orange: #f45c32;
@@ -592,4 +595,137 @@ button {
   font-size: 28px;
   font-weight: 700;
   line-height: 100%;
+}
+
+.experts {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.experts__container {
+  display: flex;
+  gap: 90px;
+  margin-top: 60px;
+}
+
+.experts__card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experts__card:nth-child(2) > .experts__image::before {
+  border-color: #f45c32;
+}
+.experts__card:nth-child(1) > .experts__image {
+  background-image: url("./static/experts/expert1.png");
+  background-size: cover;
+}
+.experts__card:nth-child(2) > .experts__image {
+  background-image: url("./static/experts/expert2.png");
+  background-size: cover;
+}
+.experts__card:nth-child(3) > .experts__image {
+  background-image: url("./static/experts/expert3.png");
+  background-size: cover;
+}
+
+.experts__image {
+  background-position-x: 20%;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.experts__image::before {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 350px;
+  z-index: -1;
+  transform: rotate(-6.651deg);
+  height: 450px;
+
+  border: 4px dashed rgba(28, 27, 31, 0.4);
+}
+
+.experts__title {
+  color: var(--brand-orange);
+  font-size: 24px;
+}
+
+.experts__name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.experts__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.experts__action__label {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.experts__action__button {
+  background: var(--brand-orange);
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.call-to-action {
+  padding: 80px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-to-action__text {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: #fff;
+}
+
+.call-to-action__text__small {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.call-to-action__text__big {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.call-to-action__button {
+  background: #fff;
+  padding: 25px 30px;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.call-to-action__bg {
+  position: relative;
+  opacity: 0.9;
+  background: var(--brand-orange);
+}
+
+.call-to-action__bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background: url("./static/background-chertezh.jpg");
 }
