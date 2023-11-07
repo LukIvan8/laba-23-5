@@ -1,0 +1,58 @@
+.page__title {
+  margin: 10px auto 20px;
+  width: fit-content;
+  font-size: 48px;
+  color: var(--brand-orange);
+  font-weight: 800;
+}
+.vacancy__bg {
+  background: url("./static/bg-jobs.jpg");
+  background-size: cover;
+  top: 150px;
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.jobs__container {
+  width: 50%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job__card {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.job__card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job__title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.job__pay {
+  font-size: 18px;
+}
+.job__apply {
+  padding: 12px 20px;
+  background: var(--brand-orange);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
